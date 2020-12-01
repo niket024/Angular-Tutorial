@@ -1,0 +1,60 @@
+TypeScript - Functions
+------------------------
+Functions are the building blocks of readable, maintainable, and reusable code. 
+A function is a set of statements to perform a specific task. 
+Functions organize the program into logical blocks of code. 
+Once defined, functions may be called to access code.
+
+Optional Parameters
+-------------------
+Optional parameters can be used when arguments need not be compulsorily passed for a function’s execution. 
+A parameter can be marked optional by appending a question mark to its name
+
+Rest Parameters
+------------------
+Rest parameters are similar to variable arguments in Java. 
+Rest parameters don’t restrict the number of values that you can pass to a function.
+
+Default Parameters
+-------------------
+Function parameters can also be assigned values by default. 
+However, such parameters can also be explicitly passed values.
+
+Anonymous Function
+---------------------
+Functions that are not bound to an identifier (function name) are called as anonymous functions. 
+These functions are dynamically declared at runtime. 
+
+Lambda Functions
+-----------------
+Lambda refers to anonymous functions in programming. 
+Lambda functions are a concise mechanism to represent anonymous functions. 
+These functions are also called as Arrow functions.
+
+Lambda Function - Anatomy
+There are 3 parts to a Lambda function −
+
+Parameters − A function may optionally have parameters
+
+The fat arrow notation/lambda notation (=>) − It is also called as the goes to operator
+
+Statements − represent the function’s instruction set
+
+Lambda Statement
+----------------
+Lambda statement is an anonymous function declaration that points to a block of code.
+
+Syntactic Variations
+--------------------
+Parameter type Inference
+------------------------
+It is not mandatory to specify the data type of a parameter.
+
+Function Overloads
+--------------------
+Functions have the capability to operate differently on the basis of the input provided to them. 
+In other words, a program can have multiple methods with the same name with different implementation. 
+This mechanism is termed as Function Overloading. 
+TypeScript provides support for function overloading.
+Note:
+Function overloading with different number of parameters and types with same name is not supported.

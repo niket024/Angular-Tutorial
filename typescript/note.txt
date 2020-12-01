@@ -16,7 +16,7 @@ Installation:
 Step-1: download node and Install
  https://nodejs.org/en/download
 Step-2:To verify if the installation was successful, enter the command in the terminal window.
- node –v
+node –v
 Step-3: install TypeScript.
 npm install -g typescript
 
@@ -30,6 +30,8 @@ Step-2:
 Save filename.ts
 Step-3:
 compile: tsc filename.ts
+(TypeScript provides a command-line utility tsc that compiles (transpiles) 
+TypeScript files (.ts) into JavaScript. )
 Step-4:
 run: node filename.js
 

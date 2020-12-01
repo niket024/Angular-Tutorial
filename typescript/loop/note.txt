@@ -1,0 +1,22 @@
+The break Statement
+-------------------
+The break statement is used to take the control out of a construct. 
+Using break in a loop causes the program to exit the loop.
+
+The continue Statement
+--------------------
+The continue statement skips the subsequent statements in the current 
+iteration and takes the control back to the beginning of the loop. 
+
+The Infinite Loop
+---------------------
+An infinite loop is a loop that runs endlessly. 
+The for loop and the while loop can be used to make an endless loop.
+
+for(;;) { 
+   console.log(“This is an endless loop”) 
+}
+
+while(true) { 
+   console.log(“This is an endless loop”) 
+}
