@@ -1,2 +1,3 @@
-var message:string = "Hello World by nike" 
-console.log(message)
+
+var message:string = "Hello World by niket kumar" ;
+console.log(message);

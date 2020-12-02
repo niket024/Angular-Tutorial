@@ -1,0 +1,40 @@
+TypeScript - Classes
+--------------------
+TypeScript is object oriented JavaScript. 
+TypeScript supports object-oriented programming features like classes, interfaces, etc. 
+A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object. 
+Typescript gives built in support for this concept called class. 
+JavaScript ES5 or earlier didn’t support classes. Typescript gets this feature from ES6.
+
+A class definition can include the following −
+
+Fields − A field is any variable declared in a class. Fields represent data pertaining to objects
+
+Constructors − Responsible for allocating memory for the objects of the class
+
+Functions − Functions represent actions an object can take. They are also at times referred to as methods
+
+Class Inheritance
+------------------
+TypeScript supports the concept of Inheritance. 
+Inheritance is the ability of a program to create new classes from an existing class. 
+The class that is extended to create newer classes is called the parent class/super class. 
+The newly created classes are called the child/sub classes.
+
+A class inherits from another class using the ‘extends’ keyword. 
+Child classes inherit all properties and methods except private members 
+and constructors from the parent class.
+
+Inheritance can be classified as −
+
+Single − Every class can at the most extend from one parent class
+
+Multiple − A class can inherit from multiple classes. TypeScript doesn’t support multiple inheritance.
+
+Multi-level − The following example shows how multi-level inheritance works.
+
+TypeScript ─ Class inheritance and Method Overriding
+---------------------------------------------------
+Method Overriding is a mechanism by which the child class redefines the superclass’s method.
+The super keyword is used to refer to the immediate parent of a class. 
+The keyword can be used to refer to the super class version of a variable, property or method.

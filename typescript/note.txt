@@ -40,7 +40,7 @@ To Enable auto compile
 tsc -w filename.ts
 
 Note: Running npm command within Visual Studio Code
-press Ctrl+P, write ext install npm script runner
+press Ctrl+P, write "ext install npm script runner"
 
 
 Identifiers in TypeScript
@@ -66,7 +66,8 @@ continue	do	catch
 
 TypeScript is Case-sensitive
 ------------------------------
-TypeScript is case-sensitive. This means that TypeScript differentiates between uppercase and lowercase characters.
+TypeScript is case-sensitive. This means that TypeScript differentiates between 
+uppercase and lowercase characters.
 
 Semicolons are optional
 --------------------------
