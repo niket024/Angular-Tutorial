@@ -1,0 +1,152 @@
+Angular 8 Introduction
+----------------------
+Angular is the most popular JavaScript framework and platform for developing client-side (front-end) 
+mobile and desktop web apps or single page applications (SPAs).
+
+Angular community has released its latest version known as Angular 8. 
+If you are familiar with previous version of Angular, it will not be difficult for you. 
+You can easily upgrade your older version of Angular to latest version Angular 8.
+
+What is Angular 8?
+------------------
+Angular 8 is an open-source, client-side TypeScript based JavaScript framework. 
+It is written in TypeScript and complied into JavaScript. 
+Angular 8 is used to create dynamic web applications. 
+It is very similar to its previous versions except having some extensive features.
+
+What is a dynamic web application?
+----------------------------------
+A dynamic web application is simply a dynamic website. i.e. www.gmail.com, www.facebook.com, 
+www.yahoo.com etc. which has a tendency to change data/information with respect to 3 parameters:
+
+Time-to-time (eg. news update webs applications)
+Location-to-location (eg. Weather-report web applications)
+User-to-user (eg. Gmail, Facebook type applications)
+
+Angular Previous Versions
+-------------------------
+AngularJS (also known as Angular 1.0): AngularJS is a JavaScript based open-source frontend web framework developed and maintained by Google. AngularJS can be added to an HTML page with a <script> tag. 
+Because AngularJS was the first version of the Angular, so it is also known as Angular 1. 
+AngularJS was first released on October 20, 2010 by a team of Google. 
+
+Angular 2: Angular 2 was a complete rewrite of AngularJS. 
+It was first released in May 2016 and the final version was released on September 14, 2016.
+
+Angular 4: Angular 4 was the updated version of Angular 2. 
+The Google team skipped the Angular 3 to avoid the confusion due to the 
+misalignment of the router package's version which was already distributed as v3.3.0.
+
+Angular 5: Angular 5 was the improved version of the previous one. 
+It was released on November 1, 2017 and improved the support for progressive web apps.
+
+Angular 6: Angular 6 Angular 6 was released on May 4, 2018. It was a major released focused on ng update, 
+ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, 
+CLI Workspaces, Library Support, Tree Shakable Providers, Animations Performance Improvements, and RxJS v6.
+
+Angular 7: Angular 7 was released on October 18, 2018. It was focused on Application Performance, 
+Angular Material & CDK, Virtual Scrolling, Improved Accessibility etc.
+
+Angular 8: Angular 8 is the latest version running nowadays. 
+Angular 8 is released on May 28, 2019. It is mainly focused on Differential loading, 
+Dynamic imports for lazy routes, web workers and Angular Ivy as an opt-in support. 
+It also supports TypeScript 3.4.
+
+# Angular-Tutorial
+Installation:
+--------------------
+Step-1: download node and Install
+ https://nodejs.org/en/download
+Step-2:To verify if the installation was successful, enter the command in the terminal window.
+node –v
+Step-3: install TypeScript.
+npm install -g typescript
+Step-4: Use npm to Install Angular CLI
+Use the following command to install Angular CLI
+
+npm install -g @angular/cli  
+Or
+npm install -g @angular/cli@latest   
+
+Step-5: To check Node and Angular CLI version, 
+use ng --version
+
+To create an app
+----------------
+ng new app_name
+eg. ng new Hello-World
+
+Step-6: To run
+
+cd Hello-World
+ng serve
+or
+npm start
+
+
+Files used in Angular 7 App folder
+---------------------------------------
+Angular 7 App files which are mainly used in your project are given below:
+
+src folder: This is the folder which contains the main code files related to your angular application.
+app folder: The app folder contains the files, you have created for app components.
+
+app.component.css: This file contains the cascading style sheets code for your app component.
+
+app.component.html: This file contains the html file related to app component. 
+This is the template file which is used by angular to do the data binding.
+
+app.component.spec.ts: This file is a unit testing file related to app component. 
+This file is used along with other unit tests. It is run from Angular CLI by the command ng test.
+
+app.component.ts: This is the most important typescript file 
+which includes the view logic behind the component.
+
+app.module.ts: This is also a typescript file which includes all the dependencies for the website. 
+This file is used to define the needed modules to be imported, 
+the components to be declared and the main component to be bootstrapped.
+
+package.json: This contains all the information of your web app.It contains all the metadata{set of data which describes and gives info about all other data}.
+In layman terms it is the first file your browser looks for, to find all the information of your web app.
+There are fields for the description and keywords of your projects like dependencies.
+
+angular.json:	CLI configuration defaults for all projects in the workspace, including 
+configuration options for build, serve, and test tools that the CLI uses,
+
+Angular 8 Architecture
+------------------------
+Angular 8 is a platform and a framework which is used to build client applications in HTML and TypeScript.
+
+Angular 8 is written in TypeScript. It implements core and optional functionality as a set of TypeScript 
+libraries that you can import into your apps.
+
+The basic building blocks of an Angular application are NgModules, 
+which provide a compilation context for components. 
+NgModules collect related code into functional sets; an Angular app is defined by a set of NgModules. 
+An app always has at least a root module that enables bootstrapping, 
+and typically has many more feature modules.
+
+Components define views, which are sets of screen elements that Angular can choose among and modify 
+according to your program logic and data.
+
+Components use services, which provide specific functionality not directly related to views. 
+Service providers can be injected into components as dependencies, 
+making your code modular, reusable, and efficient.
+
+Angular 8 Components
+------------------------
+In Angular 8, Components and services both are simply classes with decorators that mark their 
+types and provide metadata which guide Angular to do things.
+
+Every Angular application always has at least one component known as root component that connects 
+a page hierarchy with page DOM. Each component defines a class that contains application data and logic, 
+and is associated with an HTML template that defines a view to be displayed in a target environment.
+
+Metadata of Component class
+----------------------------
+
+The metadata for a component class associates it with a template that defines a view. 
+A template combines ordinary HTML with Angular directives and binding markup that allow Angular 
+to modify the HTML before rendering it for display.
+
+The metadata for a service class provides the information Angular needs to make it available to 
+components through dependency injection (DI).

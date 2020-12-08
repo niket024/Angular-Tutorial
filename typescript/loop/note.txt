@@ -1,3 +1,7 @@
+initialization
+condition
+increment/decrement
+
 The break Statement
 -------------------
 The break statement is used to take the control out of a construct. 

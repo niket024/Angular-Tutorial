@@ -8,7 +8,7 @@ Interfaces contain only the declaration of the members.
 It is the responsibility of the deriving class to define the members. 
 It often helps in providing a standard structure that the deriving classes would follow.
 
-nterfaces and Inheritance
+Interfaces and Inheritance
 -------------------------
 An interface can be extended by other interfaces. 
 In other words, an interface can inherit from other interface. 

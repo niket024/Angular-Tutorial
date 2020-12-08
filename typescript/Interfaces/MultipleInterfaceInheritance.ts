@@ -8,4 +8,4 @@ interface IParent1 {
  
  interface Child extends IParent1, IParent2 { } 
  var Iobj:Child = { v1:12, v2:23} 
- console.log("value 1: "+this.v1+" value 2: "+this.v2)
+ console.log("value 1: "+Iobj.v1+" value 2: "+Iobj.v2)

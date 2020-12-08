@@ -2,6 +2,7 @@ interface IPerson {
     firstName:string, 
     lastName:string, 
     sayHi: ()=>string 
+
  } 
  
  var customer:IPerson = { 
@@ -24,3 +25,4 @@ interface IPerson {
  console.log("Employee  Object ") 
  console.log(employee.firstName);
  console.log(employee.lastName);
+ console.log(employee.sayHi());
