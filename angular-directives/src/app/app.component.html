@@ -1,0 +1,55 @@
+<h1>ngif demo</h1>
+<button (click)="show1 = !show1">{{show1 ? 'hide' : 'show'}}</button>
+show = {{show1}}
+<br>
+<div *ngIf="show1">Text to show</div>
+<br>
+<br>
+<button (click)="show2 = !show2">{{show2 ? 'hide' : 'show'}}</button>
+show = {{show2}}
+<br>
+<br>
+<div *ngIf="show2; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+
+<hr>
+<h1>ngFor demo</h1>
+
+<div class='panel panel-primary'>  
+  <div class='panel-heading'>  
+      {{title}}  
+  </div>   
+  <div class='panel-body'>  
+      <div class='table-responsive'>  
+          <table class='table'>  
+              <thead>  
+                  <tr>  
+                      <th>Title</th>  
+                      <th>Director</th>  
+                      <th>Cast</th>  
+                      <th>Release Date</th>  
+                  </tr>  
+              </thead>  
+              <tbody>  
+                  <tr *ngFor="let movie of movies;">  
+                      <td>{{movie.title}}</td>  
+                      <td>{{movie.director}}</td>  
+                      <td>{{movie.cast}}</td>  
+                      <td>{{movie.releaseDate}}</td>  
+                  </tr>  
+              </tbody>  
+          </table>  
+      </div>  
+  </div>  
+</div>  
+
+<hr>
+<h1>ngSwitch demo</h1>
+<select [(ngModel)]="selectedValue">  
+  <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>  
+</select>  
+<div [ngSwitch]="selectedValue">  
+  <div *ngSwitchCase="'One'">One is Pressed</div>  
+  <div *ngSwitchCase="'Two'">Two is Selected</div>  
+  <div *ngSwitchDefault>Default Option</div>  
+</div>  

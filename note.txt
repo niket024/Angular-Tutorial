@@ -83,9 +83,9 @@ or
 npm start
 
 
-Files used in Angular 7 App folder
+Files used in Angular 8 App folder
 ---------------------------------------
-Angular 7 App files which are mainly used in your project are given below:
+Angular 8 App files which are mainly used in your project are given below:
 
 src folder: This is the folder which contains the main code files related to your angular application.
 app folder: The app folder contains the files, you have created for app components.
@@ -150,3 +150,53 @@ to modify the HTML before rendering it for display.
 
 The metadata for a service class provides the information Angular needs to make it available to 
 components through dependency injection (DI).
+
+Modules
+---------
+Angular 8 NgModules are different from other JavaScript modules. 
+Every Angular 8 app has a root module known as AppModule. 
+It provides the bootstrap mechanism that launches the application.
+
+Generally, every Angular 8 app contains many functional modules.
+
+Some important features of Anngular 8 Modules:
+
+1. Angular 8 NgModules import the functionalities form other NgModules just like other JavaScript modules.
+2. NgModules allow their own functionality to be exported and used by other NgModules. For example, 
+if you want to use the router service in your app, you can import the Router NgModule.
+
+Template, Directives and Data Binding
+------------------------------------
+In Angular 8, a template is used to combine HTML with Angular Markup and modify HTML elements 
+before displaying them. Template directives provide program logic, 
+and binding markup connects your application data and the DOM.
+
+There are two types of data binding:
+------------------------------------
+
+1. Event Binding: Event binding is used to bind events to your app and respond to user input 
+in the target environment by updating your application data.
+
+2. Property Binding: Property binding is used to pass data from component class and 
+facilitates you to interpolate values that are computed from your application data into the HTML.
+
+Services and Dependency Injection
+---------------------------------
+In Angular 8, developers create a service class for data or logic that isn't 
+associated with a specific view, and they want to share across components.
+
+Dependency Injection (DI) is used to make your component classes lean and efficient. 
+DI doesn't fetch data from the server, validate user input, or log directly to the console; 
+it simply renders such tasks to services.
+
+Routing3
+---------
+In Angular 8, Router is an NgModule which provides a service that facilitates developers to 
+define a navigation path among the different application states and view hierarchies in their app.
+
+It works in the same way as a browser's navigation works. i.e.:
+
+1. Enter a URL in the address bar and the browser will navigate to that corresponding page.
+2. Click the link on a page and the browser will navigate to a new page.
+3. Click the browser's back or forward buttons and the browser will navigate backward or 
+forward according to your seen history pages.
