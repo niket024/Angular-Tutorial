@@ -1,0 +1,89 @@
+Data Binding in Angular 8
+----------------------------
+Data binding is the core concept of Angular 8 and used to define the communication 
+between a component and the DOM. It is a technique to link your data to your view layer. 
+In simple words, you can say that data binding is a communication between your typescript 
+code of your component and your template which user sees. It makes easy to define interactive 
+applications without worrying about pushing and pulling data.
+
+Data binding can be either one-way data binding or two-way data binding.
+
+One-way databinding
+-------------------
+One way databinding is a simple one way communication where HTML template is 
+changed when we make changes in TypeScript code.
+Or
+
+In one-way databinding, the value of the Model is used in the View (HTML page) but you can't 
+update Model from the View. Angular Interpolation / String Interpolation, Property Binding, 
+and Event Binding are the example of one-way databinding.
+
+Two-way databinding
+----------------------
+In two-way databinding, automatic synchronization of data happens between the 
+Model and the View. Here, change is reflected in both components. Whenever you make changes in the Model, 
+it will be reflected in the View and when you make changes in View, it will be reflected in Model.
+
+This happens immediately and automatically, ensures that the HTML template and the 
+TypeScript code are updated at all times.
+
+Angular provides four types of data binding and they are different on the way of data flowing.
+
+1. String Interpolation
+2. Property Binding
+3. Event Binding
+4. Two-way binding
+
+
+String interpolation
+---------------------
+String Interpolation is a one-way databinding technique which is used to output the data from a 
+TypeScript code to HTML template (view). It uses the template expression in double curly braces to 
+display the data from the component to the view.
+
+For example:
+
+{{ data }}
+
+Property Binding
+-----------------
+Property Binding is also a one-way data binding technique. In property binding, 
+we bind a property of a DOM element to a field which is a defined property in our component TypeScript code.
+
+For example:
+
+<img [src]="imgUrl"/>
+
+Event Binding
+--------------
+In Angular 8, event binding is used to handle the events raised from the DOM like button click, 
+mouse move etc. When the DOM event happens (eg. click, change, keyup), it calls the specified 
+method in the component. In the following example, the cookBacon() method from the component is 
+called when the button is clicked:
+
+For example:
+
+<button (click)="cookBacon()"></button>  
+
+Two way Data Binding in Angular 8
+=================================
+We have seen that in one-way data binding any change in the template (view) were not be 
+reflected in the component TypeScript code. To resolve this problem, Angular provides two-way data binding. 
+The two-way binding has a feature to update data from component to view and vice-versa.
+
+In two-way databinding, automatic synchronization of data happens between the Model and the View. Here, 
+change is reflected in both components. Whenever you make changes in the Model, it will be reflected in 
+the View and when you make changes in View, it will be reflected in Model.
+
+This happens immediately and automatically, ensures that the HTML template and the TypeScript code are 
+updated at all times.
+
+first of all you need to import FormsModule in app.module.ts  
+eg. import {FormsModule} from '@angular/forms';    
+and also in import
+eg.  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+

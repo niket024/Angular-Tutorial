@@ -1,0 +1,22 @@
+<h2>
+  {{ title }}
+</h2>
+
+<h2>Calculation is : {{ numberA + numberB }}</h2>
+<h2>Calculation is : {{ addTwoNumbers()}}</h2>
+
+<img [src]="imgUrl" />
+
+<h2> Event Binding Example</h2>
+<button (click)="onSave($event)">Save</button>
+<br>
+<br>
+<br>
+<div (click)="onDivClick()"> click me</div>
+
+
+<Hr>
+
+<h2>Two-way Binding Example</h2>
+<input [(ngModel)]="fullName" /> <br /><br />
+<p> {{fullName}} </p>
