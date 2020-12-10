@@ -1,0 +1,63 @@
+Angular 8 Forms
+================
+Angular forms are used to handle user's input. We can use Angular form in our application to 
+enable users to log in, to update profile, to enter information, and to perform many other data-entry tasks.
+
+In Angular 8, there are 2 approaches to handle user's input through forms:
+
+1. Reactive forms
+2. Template-driven forms
+Both approaches are used to collect user input events from the view, validate the user input, 
+create a form model and data model to update, and provide a way to track changes.
+
+Reactive Forms vs. Template-driven Forms
+Both Reactive forms and Template-driven forms manage and process data differently. Each offers different advantages.
+
+Reactive Forms
+===============
+Reactive forms are more robust.
+Reactive forms are more scalable, reusable, and testable.
+They are most preferred to use if forms are a key part of your application, 
+or your application is already built using reactive patterns. In both cases, 
+reactive forms are best to use.
+
+Template-driven Forms
+====================
+Template-driven forms are best if you want to add a simple form to your application. 
+For example: email list signup form.
+Template-driven forms are easy to use in the application but they are not as scalable as Reactive forms.
+Template-driven forms are mainly used if your application's requires a very basic form and logic. 
+It can easily be managed in a template.
+
+Adding bootstrap in Angular
+===========================
+npm install bootstrap --save 
+Now, include the bootstrap 4 inside the angular.json file inside styles array.
+
+"styles": [  
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",  
+    "src/styles.css"  
+],  
+
+Register the Reactive Forms Module
+
+How to add a new component in existing application
+===================================================
+1. ng generate component component-name
+eg. ng generate component registration
+(it will generate all related class)
+2. import in app.module.ts 
+eg. import { RegistrationComponent } from './registration/registration.component';  
+3. import in app-routing.module.ts 
+eg. import { RegistrationComponent } from './registration/registration.component';  
+4. add the path and component in app-routing.module.ts 
+eg. 
+const routes: Routes = [  
+  {  
+    path: 'registration',  
+    component: RegistrationComponent  
+  }
+  
+];  
+
+5. add <router-outlet></router-outlet>  in app.component.html
