@@ -55,3 +55,63 @@ Angular 8 ngSwitch Directive
 In Angular 8, ngSwitch is a structural directive which is used to Add/Remove DOM Element. 
 It is similar to switch statement of C#. 
 The ngSwitch directive is applied to the container element with a switch expression.
+
+DOM manipulation
+-----------------
+What is the DOM?
+The DOM is a W3C (World Wide Web Consortium) standard.
+
+The DOM defines a standard for accessing documents:
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that 
+allows programs and scripts to dynamically access and update the content, 
+structure, and style of a document."
+
+Note:
+While working as the front-end developer, the most important point to focus is to 
+manipulate the DOM as less as possible which in turns may improve the web performance.
+
+Creating custom Directive
+=============================
+ng generate directive textDanger
+
+DOM manipulate by Renderer2 service
+====================================
+old way (this.elRef.nativeElement.style.color = 'green') is not recommended because of security reason.
+The Renderer2 class is an out of the box feature from Angular which provides an abstraction for
+manipulating UI rendering elements of your app at runtime without the need to access the DOM directly. 
+This is the best approach to consider because of some security reasons 
+like XSS Attacks and also to be able to develop apps that can be rendered on various platforms 
+that don’t have direct DOM access, like servers, web workers or native mobile.
+
+With the help of the Angular 7 Renderer2 service class you can perform simple DOM manipulations 
+as well as complex one.
+
+It is more convenient to use Renderer2 in custom directives because of 
+how Angular directives are the main logical building block 
+responsible for modifying elements.
+
+Using Renderer2 class, you can add and remove CSS classes, styles, HTML attributes. 
+It can be used to append or remove a child element within a parent element with 
+Angular 7 Renderer2 class. You can add HTML comment to any parent element of the DOM easily. 
+You can make elements listen to some defined events.
+
+
+What Angular docs says about ElementRef :
+===========================================
+Use this API as the last resort when direct access to DOM is needed. 
+Permitting direct access to the DOM can make your application more vulnerable to XSS attacks. 
+Carefully review any use of ElementRef in your code. Use templating and data-binding provided by 
+Angular instead. Alternatively you can take a look at Renderer which provides API that can safely 
+be used even when direct access to native elements is not supported.
+Relying on direct DOM access creates tight coupling between your application and rendering 
+layers which will make it impossible to separate the two and deploy your application into a web worker.
+
+look at the example
+=======================
+Example 1: setStyle - TextDangerDirective
+Example 2: createElement / appendChild / createText - TextDangerDirective
+Example 3: setAttribute / removeAttribute - DefaultInputDirective
+Example 4: addClass / removeClass - AddRemoveClassDirective
+
+Ref:https://angular.io/api/core/Renderer2

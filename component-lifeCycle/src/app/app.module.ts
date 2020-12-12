@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TextDangerDirective } from './text-danger.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TextDangerDirective
   ],
   imports: [
     BrowserModule,
