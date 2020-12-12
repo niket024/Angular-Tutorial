@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
-  userForm: FormGroup | undefined
+  userForm!: FormGroup; 
   constructor(private formBuilder: FormBuilder) { }
   onSubmit(){
     if(this.userForm.valid){
