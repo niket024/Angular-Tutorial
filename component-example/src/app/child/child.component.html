@@ -1,0 +1,8 @@
+<h1>Fruit List</h1>
+<ul>
+  <li *ngFor="let item of data">{{item}}</li>
+</ul>
+
+
+<label>Add an item: <input #newItem></label>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>

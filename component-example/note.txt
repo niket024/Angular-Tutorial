@@ -1,0 +1,52 @@
+Components 
+==============
+Components are a logical piece of code for Angular JS application. A Component consists of the following −
+
+1. Template − This is used to render the view for the application. 
+This contains the HTML that needs to be rendered in the application. 
+This part also includes the binding and directives.
+
+2. Class − This is like a class defined in any language such as C. 
+This contains properties and methods. This has the code which is used to support the view. 
+It is defined in TypeScript.
+
+3. Metadata − This has the extra data defined for the Angular class. It is defined with a decorator.
+
+Component interaction
+=====================
+1. Pass data from parent to child with input binding
+2. Pass data from child to parent with output binding
+
+@Input
+======
+Angular provides us @Input decorator by using that we can pass data from parent component to child component.
+Decorator that marks a class field as an input property and supplies configuration metadata. 
+The input property is bound to a DOM property in the template. 
+During change detection, Angular automatically updates the data property with the DOM property's value.
+Ref: https://angular.io/generated/images/guide/inputs-outputs/input.svg
+
+Let’s create a child component to send data from parent component.
+ng g c child
+
+look at this diagram: https://angular.io/generated/images/guide/inputs-outputs/input-diagram-target-source.svg
+
+Sending data to a parent component
+==================================
+@Output
+=======
+The @Output() decorator in a child component or directive allows data to flow from the child to the parent.
+ref: https://angular.io/generated/images/guide/inputs-outputs/output.svg
+@Output() marks a property in a child component as a doorway through which data can travel 
+from the child to the parent.
+
+The child component uses the @Output() property to raise an event to notify the parent of the change. 
+To raise an event, an @Output() must have the type of EventEmitter, 
+which is a class in @angular/core that you use to emit custom events.
+
+Passing Local Reference #id (1-way)
+-------------------------------------
+This method uses id and event to fetch input value. Firstly give #id to your input element, as shown below
+
+<input type="text" class="form-control" #myInput >
+Now use the angular event to pass the value of the input using its id to a method
+
