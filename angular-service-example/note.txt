@@ -1,0 +1,39 @@
+Angular 8 Services
+===================
+Angular Service contains the various methods and functions to manage the data arriving from the server.
+
+Why Angular Service Class?
+=========================
+To handle the features that are separate from components such as authentication, CRUD operations.
+To share the data among various components in an Angular app.
+To make the Testing and Debugging simple.
+To write the re-usable code to centrally organise the application.
+
+What is Angular Service?
+========================
+Most of the time, we get into the situation where we need to use the same code again and again. 
+Using repetitive code in multiple components becomes a headache.
+
+When the size of an Angular application gets bigger, then It almost becomes difficult to 
+manage the code base of our app. In this scenario,
+the best practice will be to write the reusable code.
+
+Creating Service Class
+=======================
+ng generate service Calc
+
+@Injectable(): 
+===============
+Decorator that marks a class as available to be provided and injected as a dependency.
+
+providedIn:
+============
+The metadata, providedIn: 'root', means that the Service is visible throughout the application.
+
+Dependency injection in Angular
+===============================
+Dependencies are services or objects that a class needs to perform its function. Dependency injection, or DI, 
+is a design pattern in which a class requests dependencies from external sources rather than creating them.
+
+Angular's DI framework provides dependencies to a class upon instantiation. 
+You can use Angular DI to increase flexibility and modularity in your applications.

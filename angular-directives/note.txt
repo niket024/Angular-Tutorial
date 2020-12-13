@@ -67,6 +67,8 @@ The DOM defines a standard for accessing documents:
 allows programs and scripts to dynamically access and update the content, 
 structure, and style of a document."
 
+look at the image DOM_architecture.gif
+
 Note:
 While working as the front-end developer, the most important point to focus is to 
 manipulate the DOM as less as possible which in turns may improve the web performance.
