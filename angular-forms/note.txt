@@ -29,6 +29,47 @@ Template-driven forms are easy to use in the application but they are not as sca
 Template-driven forms are mainly used if your application's requires a very basic form and logic. 
 It can easily be managed in a template.
 
+Angular 8 - Routing
+===================
+Routing basically means navigating between pages.
+In a single-page app, you change what the user sees by showing or hiding portions of the 
+display that correspond to particular components, rather than going out to the server to get a new page. 
+As users perform application tasks, they need to move between the different views that you have defined.
+
+Generate an app with routing 
+============================
+ng new routing-app --routing
+
+aap-routing.module.ts file will be created
+
+include router in app.module.ts
+eg. import { RouterModule} from '@angular/router';
+
+Here, the RouterModule is imported from angular/router. 
+The module is included in the imports as shown below −
+
+RouterModule.forRoot([
+   {
+      path: 'new-cmp',
+      component: NewCmpComponent
+   }
+])
+RouterModule refers to the forRoot which takes an input as an array, which in turn has the 
+object of the path and the component. Path is the name of the router and component is 
+the name of the class, i.e., the component created.
+
+<a routerLink = "new-cmp">New component</a>
+=============================================
+This will navigate to the new component
+
+<router-outlet> </router-outlet>.
+===============================
+When a user clicks new component, the page should display the content. For this, 
+we need the following tag - <router-outlet> </router-outlet>.
+This tag ensures that the content in the new-cmp.component.html will be 
+displayed on the page when a user clicks new component.
+
+
 Adding bootstrap in Angular
 ===========================
 npm install bootstrap --save 
