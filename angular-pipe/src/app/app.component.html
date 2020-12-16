@@ -1,0 +1,30 @@
+<div>
+  <h1 style="color: red;font-size: xx-large;">Demonstrate of Pipe in Angular 8</h1>
+  <h2 style="color: blue;font-size: larger;">Date Pipes</h2>
+  Full Date : {{todayDate}}<br />
+  Short Date : {{todayDate | date:'shortDate'}}<br />
+  Medium Date : {{todayDate | date:'mediumDate'}}<br />
+  Full Date : {{todayDate | date:'fullDate'}}<br />
+  Time : {{todayDate | date:'HH:MM'}}<br />
+  Time : {{todayDate | date:'hh:mm:ss a'}}<br />
+  Time : {{todayDate | date:'hh:mm:ss p'}}<br />
+
+  <h2 style="color: blue;font-size: larger;">Number Pipes</h2>
+  No Formatting : {{amount}}<br />
+  2 Decimal Place : {{amount |number:'2.2-2'}}
+
+  <h2 style="color: blue;font-size: larger;">Currency Pipes</h2>
+  No Formatting : {{amount}}<br />
+  USD Doller($) : {{amount |currency:'USD':true}}<br />
+  USD Doller : {{amount |currency:'USD':false}}<br />
+  INR() : {{amount |currency:'INR':true}}<br />
+  INR : {{amount |currency:'INR':false}}<br />
+
+  <h2 style="color: blue;font-size: larger;">String Related Pipes</h2>
+  Actual Message : {{message}}<br />
+  Lower Case : {{message | lowercase}}<br />
+  Upper Case : {{message | uppercase}}<br />
+
+  <h2 style="color: blue;font-size: larger;"> Percentage Pipes</h2>
+  2 Place Formatting : {{amount | percent :'.2'}}<br /><br />
+</div>

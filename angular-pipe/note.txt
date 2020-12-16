@@ -1,0 +1,31 @@
+Angular Pipes 
+===============
+Use pipes to transform strings, currency amounts, dates, and other data for display. 
+Pipes are simple functions you can use in template expressions to accept an input 
+value and return a transformed value. 
+Pipes are useful because you can use them throughout your application, while only declaring each pipe once.
+
+Basically, pipes provide a sophisticated and handsome way to perform the tasks within the templates. 
+Pipes make our code clean and structured.
+
+Why Pipe Required?
+
+In any application, Pipe can be needed to use as per the following reason –
+We can display only some filtered elements from an array.
+We can modify or format the value.
+We can use them as a function.
+We can do all of the above combined.
+
+The most commonly used built-in pipes are:
+Currency
+Date
+Uppercase
+Lowercase
+JSON
+Decimal
+Percent
+Async
+
+Syntax of Pipes
+
+{{myValue | myPipe:param1:param2 | mySecondPipe:param1}} 
